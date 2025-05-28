@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap");
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.app {
+  background-color: rgba(245, 245, 245, 0.107);
+}
+
+@layer utilities {
+  .bg-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  .shadow-bottom {
+    box-shadow: 0 3px 8px -1px rgba(0, 0, 0, 0.1);
+  }
+  .font-ovo {
+    font-family: 'Ovo', serif;
+  }
+  .font-outfit {
+    font-family: 'Outfit', sans-serif;
+  }
+}
