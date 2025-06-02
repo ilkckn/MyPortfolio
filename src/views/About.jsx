@@ -1,7 +1,4 @@
-import {
-  motion,
-  AnimatePresence,
-} from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState, useContext } from "react";
 import { MainContext } from "../context/MainContext";
 import personal from "../assets/images/personal/personal-1.png";
@@ -16,14 +13,23 @@ function About() {
       id="about"
       className="about w-full min-h-[100vh] flex items-center justify-center relative overflow-hidden"
     >
-      <main className="w-full h-[100vh] flex flex-col items-center justify-center gap-10">
-        <section className="introduction font-ovo flex flex-col justify-center items-center leading-[5rem]">
+      <main
+        className="w-full h-[100vh] flex flex-col items-center justify-center gap-10
+        max-[1025px]:gap-5 px-8"
+      >
+        <section
+          className="introduction font-ovo flex flex-col justify-center items-center leading-[5rem]
+          max-[1025px]:leading-[4.5rem]
+          max-[821px]:leading-[4rem]"
+        >
           <motion.p
             initial={{ y: -100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
             viewport={{ once: false }}
-            className="text-[2.5rem] capitalize"
+            className="text-[2.5rem] capitalize
+            max-[1025px]:text-[2.4rem] max-[1025px]:text-center
+            max-[821px]:text-[2.2rem] max-[821px]:text-center"
           >
             Introduction
           </motion.p>
@@ -32,36 +38,53 @@ function About() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
             viewport={{ once: false }}
-            className="text-[5.5rem] text-slate-800 font-medium font-ovo tracking-wide"
+            className="text-[5.5rem] text-slate-800 font-medium font-ovo tracking-wide
+            max-[1025px]:text-[4.5rem] max-[1025px]:text-center
+            max-[821px]:text-[4rem] max-[821px]:text-center"
           >
             About me
           </motion.h1>
         </section>
-        <section className="content flex justify-between items-center gap-15 p-3 px-6">
+        <section
+          className="content flex justify-between items-center gap-15 p-3 px-6
+            max-[1025px]:flex-col max-[1025px]:gap-10 max-[1025px]:p-4 max-[1025px]:px-2
+            max-[821px]:gap-8 max-[821px]:p-2 max-[821px]:px-1"
+        >
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
             viewport={{ once: false }}
-            className="left flex-2/7 bg-slate-50 rounded-4xl overflow-hidden shadow-lg shadow-slate-700"
+            className="left flex-2/7 bg-slate-50 rounded-4xl overflow-hidden shadow-lg shadow-slate-700
+            max-[1025px]:rounded-full max-[1025px]:h-[15rem] max-[1025px]:w-[15rem]
+            max-[821px]:rounded-full max-[821px]:h-[12rem] max-[821px]:w-[12rem]"
           >
             <figure
-              className="w-full rounded-4xl overflow-hidden"
+              className="w-full rounded-4xl overflow-hidden
+              max-[1025px]:rounded-full max-[1025px]:w-[15rem] max-[1025px]:h-[15rem]
+              max-[821px]:rounded-full max-[821px]:w-[12rem] max-[821px]:h-[12rem]"
             >
               <img
                 src={personal}
                 alt=""
-                className="w-full h-[35rem] object-cover"
+                className="w-full h-[35rem] object-cover
+                max-[1025px]:w-[15rem] max-[1025px]:h-[15rem] max-[1025px]:object-cover
+                max-[821px]:w-[12rem] max-[821px]:h-[12rem] max-[821px]:object-cover"
               />
             </figure>
           </motion.div>
-          <div className="right w-full h-[35rem] flex-5/7 flex flex-col justify-between">
+          <div
+            className="right w-full h-[35rem] flex-5/7 flex flex-col justify-between
+            max-[1025px]:items-center"
+          >
             <motion.article
               initial={{ y: 100, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.8 }}
               viewport={{ once: false }}
-              className="text-[1.4rem] text-slate-800 font-normal font-ovo"
+              className="text-[1.4rem] text-slate-800 font-normal font-ovo
+              max-[1025px]:text-[1.3rem] max-[1025px]:text-center max-[1025px]:w-full
+              max-[821px]:text-[1.2rem] max-[821px]:text-center max-[821px]:w-full"
             >
               <p>
                 I'm a Full Stack Developer with a strong foundation built
@@ -82,7 +105,8 @@ function About() {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1 }}
               viewport={{ once: false }}
-              className="cards-container w-[40rem] flex flex-col gap-8 p-4  bg-transparent"
+              className="cards-container w-[40rem] flex flex-col gap-8 p-4  bg-transparent
+              max-[1025px]:items-center"
             >
               <div className="cards flex items-center gap-0.5">
                 {cardsData.map((card, idx) => (

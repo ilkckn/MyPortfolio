@@ -42,13 +42,17 @@ function Contact() {
       className="contact w-full min-h-[100vh] flex flex-col items-center justify-center relative overflow-hidden px-4"
       id="contact"
     >
-      <section className="introduction font-ovo flex flex-col justify-center items-center leading-[5rem] mb-8">
+      <section className="introduction font-ovo flex flex-col justify-center items-center leading-[5rem] mb-8
+      max-[1025px]:leading-[4rem] max-[1025px]:mb-6
+      max-[821px]:leading-[3.5rem] max-[821px]:mb-4">
         <motion.p
           initial={{ y: -100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
           viewport={{ once: false }}
-          className="text-[2.5rem] capitalize"
+          className="text-[2.5rem] capitalize
+          max-[1025]:text-[2.2rem] max-[1025]:text-center
+          max-[821px]:text-[1.8rem] max-[821px]:text-center"
         >
           Connect with me
         </motion.p>
@@ -57,7 +61,9 @@ function Contact() {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
           viewport={{ once: false }}
-          className="text-[5.5rem] font-medium"
+          className="text-[5.5rem] font-medium
+          max-[1025px]:text-[4.8rem] max-[1025px]:text-center
+          max-[821px]:text-[3.7rem] max-[821px]:text-center text-slate-800 font-ovo tracking-wide"
         >
           Get in touch
         </motion.h1>
@@ -67,14 +73,18 @@ function Contact() {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.6 }}
         viewport={{ once: false }}
-        className="w-[70%] flex justify-center items-center text-[1.5rem] text-slate-600 text-center font-ovo font-normal"
+        className="w-[70%] flex justify-center items-center text-[1.5rem] text-slate-600 text-center font-ovo font-normal
+        max-[1025px]:text-[1.4rem] max-[1025px]:w-[85%] max-[1025px]:text-center
+        max-[821px]:text-[1.2rem] max-[821px]:w-[85%] max-[821px]:text-center"
       >
         If you have any feedback, questions, or just want to say hello — feel
         free to drop us a message. Your thoughts help us improve and grow.
       </motion.p>
 
       <form
-        className="w-[60%] mt-10 flex flex-col items-center gap-6"
+        className="w-[60%] mt-10 flex flex-col items-center gap-6
+        max-[1025px]:w-[80%] max-[1025px]:mt-8
+        max-[821px]:w-[80%] max-[821px]:mt-6"
         ref={form}
         onSubmit={sendEmail}
       >
@@ -83,9 +93,11 @@ function Contact() {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
           viewport={{ once: false }}
-          className="name-email w-full flex justify-center items-center gap-10"
+          className="name-email w-full flex justify-center items-center gap-10
+          max-[1025px]:flex-col max-[1025px]:gap-3 max-[1025px]:w-[100%]"
         >
-          <div className="name w-[70%] flex flex-col items-start">
+          <div className="name w-[70%] flex flex-col items-start
+          max-[1025px]:w-[100%]">
             <input
               type="text"
               id="name"
@@ -94,7 +106,8 @@ function Contact() {
               className="w-full h-[3.5rem] px-4 py-1 border border-slate-700 rounded-xl"
             />
           </div>
-          <div className="email w-[70%] flex flex-col items-start">
+          <div className="email w-[70%] flex flex-col items-start
+          max-[1025px]:w-[100%]">
             <input
               type="email"
               id="email"

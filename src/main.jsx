@@ -5,13 +5,16 @@ import App from "./App.jsx";
 import MainContextProvider, { MainContext } from "./context/MainContext.jsx";
 import TestimonialsContext from "./context/TestimonialsContext.jsx";
 import TestimonialsContextProvider from "./context/TestimonialsContext.jsx";
+import BurgerMenuContextProvider from "./context/BurgerMenuContext.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <MainContextProvider>
-      <TestimonialsContextProvider>
-        <App />
-      </TestimonialsContextProvider>
+      <BurgerMenuContextProvider>
+        <TestimonialsContextProvider>
+          <App />
+        </TestimonialsContextProvider>
+      </BurgerMenuContextProvider>
     </MainContextProvider>
   </StrictMode>
 );

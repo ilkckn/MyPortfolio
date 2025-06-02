@@ -32,10 +32,14 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.2 }}
         viewport={{ once: false }}
-        className="w-[90rem] flex md:flex-row items-center justify-center gap-[5rem] mt-8"
+        className="w-full max-w-[90rem] flex items-center justify-center gap-[5rem] mt-8
+         max-[1025px]:w-[60rem] max-[1025px]:gap-[1rem] max-[1025px]:flex-col max-[1025px]:mt-1
+         max-[821px]:w-[40rem] max-[821px]:gap-[0.5rem] max-[821px]:flex-col max-[821px]:mt-1"
       >
         {/* Resim */}
-        <div className="relative h-90 w-90 flex-shrink-0">
+        <div className="relative h-90 w-90 flex-shrink-0
+          max-[1025px]:w-[15rem] max-[1025px]:h-[15rem] max-[1025px]:mx-auto
+          max-[821px]:w-[10rem] max-[821px]:h-[10rem] max-[821px]:mx-auto">
           <AnimatePresence>
             {testimonials.map((testimonial, index) => (
               <motion.div
@@ -66,7 +70,11 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
                   duration: 0.4,
                   ease: "easeInOut",
                 }}
-                className="absolute inset-0 origin-bottom"
+                className="absolute inset-0 origin-bottom
+                max-[1025px]:w-[15rem] max-[1025px]:h-[15rem] max-[1025px]:left-1/2
+                max-[1025px]:-translate-x-1/2
+                max-[821px]:w-[10rem] max-[821px]:h-[10rem] max-[821px]:left-1/2
+                max-[821px]:-translate-x-1/2"
               >
                 <img
                   src={testimonial.src}
@@ -74,7 +82,10 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
                   width={300}
                   height={300}
                   draggable={false}
-                  className="h-full w-full rounded-xl object-cover object-center"
+                  className="h-full w-full rounded-xl object-cover object-center
+                  max-[1025px]:h-[15rem] max-[1025px]:w-[15rem]
+                  max-[821px]:h-[10rem] max-[821px]:w-[10rem]"
+                  loading="lazy"
                 />
               </motion.div>
             ))}
@@ -86,7 +97,8 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
           viewport={{ once: false }}
-          className="w-full max-w-3xl flex flex-col justify-between py-2"
+          className="w-full max-w-3xl flex flex-col justify-between py-2
+          max-[1025px]:justify-center max-[1025px]:items-center"
         >
           <motion.div
             key={active}
@@ -107,13 +119,19 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
               ease: "easeInOut",
             }}
           >
-            <h3 className="text-2xl font-bold text-slate-900">
+            <h3 className="text-2xl font-bold text-slate-900
+            max-[1025px]:text-2xl max-[1025px]:text-center
+            max-[821px]:text-xl max-[821px]:text-center">
               {testimonials[active].name}
             </h3>
-            <p className="text-md text-slate-700">
+            <p className="text-md text-slate-700
+            max-[1025px]:text-md max-[1025px]:text-center
+            max-[821px]:text-sm max-[821px]:text-center">
               {testimonials[active].designation}
             </p>
-            <motion.p className="mt-6 text-[1.1rem] text-slate-700">
+            <motion.p className="mt-6 text-[1.1rem] text-slate-700
+            max-[1025px]:text-md max-[1025px]:text-center
+            max-[821px]:text-[1rem] max-[821px]:text-center">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}

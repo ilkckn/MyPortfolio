@@ -36,16 +36,23 @@ function MyServices() {
 
   return (
     <div
-      className="w-full min-h-[100vh] flex flex-col items-center justify-center gap-8 bg-transparent"
+      className="w-full min-h-[100vh] flex flex-col items-center justify-center gap-8 bg-transparent
+        max-[821px]:pt-10"
       id="my-services"
     >
-      <section className="introduction font-ovo flex flex-col justify-center items-center leading-[5rem] mb-3">
+      <section
+        className="introduction font-ovo flex flex-col justify-center items-center leading-[5rem] mb-3
+          max-[1025px]:leading-[4.5rem] max-[1025px]:mb-0
+          max-[821px]:leading-[4rem] max-[821px]:mb-0"
+      >
         <motion.p
           initial={{ y: -100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
           viewport={{ once: false }}
-          className="text-[2.5rem]"
+          className="text-[2.5rem]
+            max-[1025px]:text-[2.4rem] max-[1025px]:text-center
+            max-[821px]:text-[2.2rem]"
         >
           What I offer
         </motion.p>
@@ -54,7 +61,9 @@ function MyServices() {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
           viewport={{ once: false }}
-          className="text-[5.5rem] text-slate-800 font-medium font-ovo tracking-wide"
+          className="text-[5.5rem] text-slate-800 font-medium font-ovo tracking-wide
+            max-[1025px]:text-[4.5rem] max-[1025px]:text-center
+            max-[821px]:text-[4.5rem]"
         >
           My Services
         </motion.h1>
@@ -64,7 +73,9 @@ function MyServices() {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.6 }}
         viewport={{ once: false }}
-        className="w-[70%] flex justify-center items-center text-[1.3rem] text-slate-600 text-center font-ovo font-normal"
+        className="w-[70%] flex justify-center items-center text-[1.3rem] text-slate-600 text-center font-ovo font-normal
+          max-[1025px]:text-[1.2rem] max-[1025px]:w-[90%] max-[1025px]:text-center
+          max-[821px]:text-[1.2rem] max-[821px]:w-[85%] max-[821px]:text-center"
       >
         As a versatile Full-Stack Developer and Designer, I offer a range of
         digital services to help bring your ideas to life. Whether you need a
@@ -73,7 +84,11 @@ function MyServices() {
         results tailored to your needs.
       </motion.p>
       <div className="flex flex-wrap items-center justify-center gap-4 w-full">
-        <div className="flex flex-wrap items-center justify-center gap-8 w-full mt-3">
+        <div
+          className="flex flex-wrap items-center justify-center gap-8 w-full mt-3
+            max-[1025px]:gap-2 max-[1025px]:flex-col
+            max-[821px]:flex-col"
+        >
           {/* Web Design Card */}
           <motion.div
             initial={{ x: -100, opacity: 0 }}
@@ -86,8 +101,16 @@ function MyServices() {
             }}
           >
             <GlareCard>
-              <div className="flex flex-col items-center justify-center h-full w-full p-6">
-                <div className="text-[3.5rem] mb-6">
+              <div
+                className="flex flex-col items-center justify-center h-full w-full p-6
+                  max-[1025px]:p-3
+                  max-[821px]:p-2"
+              >
+                <div
+                  className="text-[3.5rem] mb-6
+                    max-[1025px]:text-[3rem] max-[1025px]:mb-3
+                    max-[821px]:text-[2.5rem] max-[821px]:mb-3"
+                >
                   <svg width="0" height="0">
                     <linearGradient
                       id="gradient"
@@ -104,15 +127,31 @@ function MyServices() {
                   <TfiWorld style={{ fill: "url(#gradient)" }} />
                 </div>
 
-                <span className="text-3xl text-slate-100 font-outfit font-semibold mb-2">
+                <span
+                  className="text-3xl text-slate-100 font-outfit font-semibold mb-2
+                    max-[1025px]:text-[1.8rem] max-[1025px]:mb-1
+                    max-[821px]:text-[1.5rem]"
+                >
                   Web Design
                 </span>
-                <span className="text-lg font-normal font-outfit text-slate-200 text-center">
+                <span
+                  className="text-lg font-normal font-outfit text-slate-200 text-center
+                    max-[1025px]:text-[1.2rem] max-[1025px]:text-center
+                    max-[821px]:text-[1rem]"
+                >
                   Modern, responsive and user-oriented web interfaces.
                 </span>
-                <span className="inline-flex gap-2 w-[9rem] border-b text-[1.2rem] font-normal font-outfit relative mt-4 text-white">
+                <span
+                  className="inline-flex gap-2 w-[9rem] border-b text-[1.2rem] font-normal font-outfit relative mt-4 text-white
+                    max-[1025px]:text-[1.2rem] max-[1025px]:mt-2 max-[1025px]:w-[9rem]
+                    max-[821px]:text-[1rem] max-[821px]:mt-2 max-[821px]:w-[7.5rem]"
+                >
                   Click for more{" "}
-                  <TiArrowRight className="absolute top-2 right-0" />
+                  <TiArrowRight
+                    className="absolute top-2 right-0
+                    max-[1025px]:text-[1.5rem] max-[1025px]:top-1
+                    max-[821px]:text-[1.3rem] max-[821px]:top-1"
+                  />
                 </span>
               </div>
             </GlareCard>
@@ -129,8 +168,16 @@ function MyServices() {
             }}
           >
             <GlareCard>
-              <div className="flex flex-col items-center justify-center h-full w-full p-6">
-                <div className="text-[3.5rem] mb-6">
+              <div
+                className="flex flex-col items-center justify-center h-full w-full p-6
+                  max-[1025px]:p-3
+                  max-[821px]:p-2"
+              >
+                <div
+                  className="text-[3.5rem] mb-6
+                    max-[1025px]:text-[3rem] max-[1025px]:mb-3
+                    max-[821px]:text-[2.5rem] max-[821px]:mb-3"
+                >
                   <svg width="0" height="0">
                     <linearGradient
                       id="gradient"
@@ -146,20 +193,37 @@ function MyServices() {
                   </svg>
                   <MdDesignServices style={{ fill: "url(#gradient)" }} />
                 </div>
-                <span className="text-3xl text-slate-100 font-outfit font-semibold mb-2">
+                <span
+                  className="text-3xl text-slate-100 font-outfit font-semibold mb-2
+                    max-[1025px]:text-[1.8rem] max-[1025px]:mb-1
+                    max-[821px]:text-[1.5rem]"
+                >
                   UI Design
                 </span>
-                <span className="text-lg font-normal font-outfit text-slate-200 text-center">
+                <span
+                  className="text-lg font-normal font-outfit text-slate-200 text-center
+                    max-[1025px]:text-[1.2rem] max-[1025px]:text-center
+                    max-[821px]:text-[1rem]"
+                >
                   Aesthetic and functional UI designs that prioritize user
                   experience.
                 </span>
-                <span className="inline-flex gap-2 w-[9rem] border-b text-[1.2rem] font-normal font-outfit relative mt-4 text-white">
-                  Click for more{" "}
-                  <TiArrowRight className="absolute top-2 right-0" />
+                <span
+                  className="inline-flex gap-2 w-[9rem] border-b text-[1.2rem] font-normal font-outfit relative mt-4 text-white
+                    max-[1025px]:text-[1.2rem] max-[1025px]:mt-2 max-[1025px]:w-[9rem]
+                    max-[821px]:text-[1rem] max-[821px]:mt-2 max-[821px]:w-[7.5rem]"
+                >
+                  Click for more
+                  <TiArrowRight
+                    className="absolute top-2 right-0
+                      max-[1025px]:text-[1.5rem] max-[1025px]:top-1
+                      max-[821px]:text-[1.3rem] max-[821px]:top-1"
+                  />
                 </span>
               </div>
             </GlareCard>
           </motion.div>
+
           {/* Graphic Design Card */}
           <motion.div
             initial={{ x: 100, opacity: 0 }}
@@ -172,8 +236,16 @@ function MyServices() {
             }}
           >
             <GlareCard>
-              <div className="flex flex-col items-center justify-center h-full w-full p-6">
-                <div className="text-[3.5rem] mb-6">
+              <div
+                className="flex flex-col items-center justify-center h-full w-full p-6
+                  max-[1025px]:p-3
+                  max-[821px]:p-2"
+              >
+                <div
+                  className="text-[3.5rem] mb-6
+                    max-[1025px]:text-[3rem] max-[1025px]:mb-3
+                    max-[821px]:text-[2.5rem] max-[821px]:mb-3"
+                >
                   <svg width="0" height="0">
                     <linearGradient
                       id="gradient"
@@ -189,15 +261,31 @@ function MyServices() {
                   </svg>
                   <FaPencilRuler style={{ fill: "url(#gradient)" }} />
                 </div>
-                <span className="text-3xl text-slate-100 font-outfit font-semibold mb-2">
+                <span
+                  className="text-3xl text-slate-100 font-outfit font-semibold mb-2
+                    max-[1025px]:text-[1.8rem] max-[1025px]:mb-1
+                    max-[821px]:text-[1.5rem]"
+                >
                   Graphic Design
                 </span>
-                <span className="text-lg font-normal font-outfit text-slate-200 text-center">
+                <span
+                  className="text-lg font-normal font-outfit text-slate-200 text-center
+                    max-[1025px]:text-[1.2rem] max-[1025px]:text-center
+                    max-[821px]:text-[1rem]"
+                >
                   Creative logo and graphic designs for your brand and projects.
                 </span>
-                <span className="inline-flex gap-2 w-[9rem] border-b text-[1.2rem] font-normal font-outfit relative mt-4 text-white">
+                <span
+                  className="inline-flex gap-2 w-[9rem] border-b text-[1.2rem] font-normal font-outfit relative mt-4 text-white
+                    max-[1025px]:text-[1.2rem] max-[1025px]:mt-2 max-[1025px]:w-[9rem]
+                    max-[821px]:text-[1rem] max-[821px]:mt-2 max-[821px]:w-[7.5rem]"
+                >
                   Click for more
-                  <TiArrowRight className="absolute top-2 right-0" />
+                  <TiArrowRight
+                    className="absolute top-2 right-0
+                      max-[1025px]:text-[1.5rem] max-[1025px]:top-1
+                      max-[821px]:text-[1.3rem] max-[821px]:top-1"
+                  />
                 </span>
               </div>
             </GlareCard>

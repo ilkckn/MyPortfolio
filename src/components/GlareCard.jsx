@@ -63,7 +63,9 @@ export const GlareCard = ({ children, className }) => {
       className={cn(
         "relative isolate [contain:layout_style] [perspective:600px] transition-transform duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] will-change-transform cursor-pointer",
         // Responsive genişlik: büyük ekranda %30, max 30rem, küçükte tam genişlik
-        "w-full sm:w-[90vw] md:w-[45vw] lg:w-[30vw] max-w-[25rem] h-[30rem] [aspect-ratio:17/21]",
+        "w-full h-[30rem] [aspect-ratio:17/21]",
+        "max-[1025px]:w-[50rem] max-[1025px]:h-[14rem]",
+        "max-[821px]:w-[40rem] max-[821px]:h-[12rem]",
         className
       )}
       ref={refElement}

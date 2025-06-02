@@ -35,7 +35,7 @@ useEffect(() => {
 
 
   return (
-    <div className="app">
+    <div className="app overflow-x-hidden">
       <Toaster
         position="top-center"
         reverseOrder={false}

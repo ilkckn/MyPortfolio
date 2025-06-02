@@ -53,7 +53,9 @@ export default function InfiniteSlider() {
   return (
     <div
       ref={containerRef}
-      className="relative w-[50rem] overflow-hidden py-6 bg-white"
+      className="relative w-[50rem] overflow-hidden py-6 bg-white
+      max-[1025px]:w-[45rem]
+      max-[821px]:w-[40rem]"
     >
       <div
         ref={contentRef}
@@ -71,7 +73,9 @@ export default function InfiniteSlider() {
             <img
               src={item}
               alt=""
-              className="h-16 w-auto object-contain"
+              className="h-16 w-auto object-contain
+              max-[1025px]:h-14
+              max-[821px]:h-12"
               draggable={false}
               style={{ pointerEvents: "none" }}
             />
