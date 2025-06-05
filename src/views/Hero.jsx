@@ -21,7 +21,7 @@ function Hero() {
       >
         <div className="section-1 flex flex-col justify-center items-center gap-10 rounded-full mb-3">
           <motion.figure
-            initial={{ y: -100, opacity: 0 }}
+            initial={{ y: -80, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
             viewport={{ once: false }}
@@ -36,7 +36,7 @@ function Hero() {
             <img src={personal} alt="" className="object-cover" />
           </motion.figure>
           <motion.h1
-            initial={{ y: 100, opacity: 0 }}
+            initial={{ y: 80, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
             viewport={{ once: false }}
@@ -62,7 +62,7 @@ function Hero() {
             max-[769px]:gap-0"
         >
           <motion.h1
-            initial={{ y: 100, opacity: 0 }}
+            initial={{ y: 80, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
             viewport={{ once: false }}
@@ -91,7 +91,7 @@ function Hero() {
             <span className="text-slate-800 font-normal">based in Germany</span>
           </motion.h1>
           <motion.p
-            initial={{ y: 100, opacity: 0 }}
+            initial={{ y: 80, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.8 }}
             viewport={{ once: false }}
@@ -110,7 +110,7 @@ function Hero() {
         </div>
         <motion.div className="section-3">
           <motion.div
-            initial={{ y: 100, opacity: 0 }}
+            initial={{ y: 80, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 1 }}
             viewport={{ once: false }}
