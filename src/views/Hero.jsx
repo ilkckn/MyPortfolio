@@ -110,9 +110,9 @@ function Hero() {
         </div>
         <motion.div className="section-3">
           <motion.div
-            initial={{ y: 80, opacity: 0 }}
+            initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 1 }}
+            transition={{ duration: 1, delay: 1.2 }}
             viewport={{ once: false }}
             className="buttons flex items-center gap-8
               max-[1025px]:gap-4"
