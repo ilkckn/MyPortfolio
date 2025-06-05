@@ -21,7 +21,7 @@ function Testimonials() {
         max-[391px]:leading-[2.5rem] max-[391px]:mb-0
         max-[376px]:leading-[2rem] max-[376px]:mb-0">
         <motion.p
-          initial={{ y: -100, opacity: 0 }}
+          initial={{ y: -50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
           viewport={{ once: false }}
@@ -36,7 +36,7 @@ function Testimonials() {
           What Teammates Say
         </motion.p>
         <motion.h1
-          initial={{ y: -100, opacity: 0 }}
+          initial={{ y: -50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
           viewport={{ once: false }}
@@ -52,7 +52,7 @@ function Testimonials() {
         </motion.h1>
       </section>
       <motion.p
-        initial={{ y: 100, opacity: 0 }}
+        initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.6 }}
         viewport={{ once: false }}

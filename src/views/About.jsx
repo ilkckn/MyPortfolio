@@ -37,7 +37,7 @@ function About() {
           max-[376px]:leading-[2rem] max-[376px]:mb-0"
         >
           <motion.p
-            initial={{ y: -100, opacity: 0 }}
+            initial={{ y: -50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
             viewport={{ once: false }}
@@ -53,7 +53,7 @@ function About() {
             Introduction
           </motion.p>
           <motion.h1
-            initial={{ y: -100, opacity: 0 }}
+            initial={{ y: -50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
             viewport={{ once: false }}
@@ -80,7 +80,7 @@ function About() {
             max-[376px]:gap-2 max-[376px]:p-0 max-[376px]:px-0"
         >
           <motion.div
-            initial={{ x: -100, opacity: 0 }}
+            initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 0.6 }}
             viewport={{ once: false }}
@@ -127,7 +127,7 @@ function About() {
             max-[376px]:gap-4 max-[376px]:items-center"
           >
             <motion.article
-              initial={{ y: 100, opacity: 0 }}
+              initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.8 }}
               viewport={{ once: false }}
@@ -137,7 +137,7 @@ function About() {
               max-[769px]:text-[1.1rem] max-[769px]:text-center max-[769px]:w-full max-[769px]:leading-6
               max-[431px]:text-[1rem] max-[431px]:text-center max-[431px]:w-[90%] max-[431px]:leading-5
               max-[415px]:text-[0.95rem] max-[415px]:text-center max-[415px]:w-[90%] max-[415px]:leading-4
-              max-[391px]:text-[0.9rem] max-[391px]:text-center max-[391px]:w-[90%] max-[391px]:leading-4
+              max-[391px]:text-[0.9rem] max-[391px]:text-center max-[391px]:w-[90%] max-[391px]:leading-4 max-[391px]:overflow-y-auto max-[391px]:h-[7rem]
               max-[376px]:text-[0.85rem] max-[376px]:text-center max-[376px]:w-[90%] max-[376px]:leading-4 max-[376px]:overflow-y-auto max-[376px]:h-[8.5rem]"
             >
               <p>
@@ -155,7 +155,7 @@ function About() {
             </motion.article>
 
             <motion.div
-              initial={{ y: 100, opacity: 0 }}
+              initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1 }}
               viewport={{ once: false }}
@@ -165,7 +165,7 @@ function About() {
                 max-[769px]:w-[40rem] max-[769px]:p-0
                 max-[431px]:w-[25rem] max-[431px]:p-0 max-[431px]:justify-center
                 max-[415px]:w-[22rem] max-[415px]:p-0 max-[415px]:justify-center
-                max-[391px]:w-[20rem] max-[391px]:p-0 max-[391px]:justify-center
+                max-[391px]:w-[20rem] max-[391px]:p-0 max-[391px]:justify-center max-[391px]:gap-5
                 max-[376px]:w-[22rem] max-[376px]:p-0 max-[376px]:justify-center max-[376px]:gap-5"
             >
               <div
@@ -234,7 +234,7 @@ function About() {
             </motion.div>
 
             <motion.div
-              initial={{ y: 70, opacity: 0 }}
+              initial={{ y: 50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
               viewport={{ once: false }}

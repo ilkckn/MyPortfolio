@@ -53,7 +53,7 @@ function MyServices() {
           max-[376px]:leading-[2rem] max-[376px]:mb-0"
       >
         <motion.p
-          initial={{ y: -100, opacity: 0 }}
+          initial={{ y: -50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
           viewport={{ once: false }}
@@ -69,7 +69,7 @@ function MyServices() {
           What I offer
         </motion.p>
         <motion.h1
-          initial={{ y: -100, opacity: 0 }}
+          initial={{ y: -50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
           viewport={{ once: false }}
@@ -86,7 +86,7 @@ function MyServices() {
         </motion.h1>
       </section>
       <motion.p
-        initial={{ y: 100, opacity: 0 }}
+        initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.6 }}
         viewport={{ once: false }}
@@ -116,7 +116,7 @@ function MyServices() {
         >
           {/* Web Design Card */}
           <motion.div
-            initial={{ x: -100, opacity: 0 }}
+            initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
             viewport={{ once: false }}
@@ -204,7 +204,7 @@ function MyServices() {
           </motion.div>
           {/* UI Design Card */}
           <motion.div
-            initial={{ y: 100, opacity: 0 }}
+            initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
             viewport={{ once: false }}
@@ -293,7 +293,7 @@ function MyServices() {
 
           {/* Graphic Design Card */}
           <motion.div
-            initial={{ x: 100, opacity: 0 }}
+            initial={{ x: 50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 1.2 }}
             viewport={{ once: false }}

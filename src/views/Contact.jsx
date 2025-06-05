@@ -47,7 +47,7 @@ function Contact() {
       max-[821px]:leading-[3.5rem] max-[821px]:mb-4
       max-[431px]:leading-[2.5rem] max-[431px]:mb-2">
         <motion.p
-          initial={{ y: -100, opacity: 0 }}
+          initial={{ y: -50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
           viewport={{ once: false }}
@@ -59,7 +59,7 @@ function Contact() {
           Connect with me
         </motion.p>
         <motion.h1
-          initial={{ y: -100, opacity: 0 }}
+          initial={{ y: -50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
           viewport={{ once: false }}
@@ -72,7 +72,7 @@ function Contact() {
         </motion.h1>
       </section>
       <motion.p
-        initial={{ y: 100, opacity: 0 }}
+        initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.6 }}
         viewport={{ once: false }}
@@ -94,7 +94,7 @@ function Contact() {
         onSubmit={sendEmail}
       >
         <motion.div
-          initial={{ y: 100, opacity: 0 }}
+          initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
           viewport={{ once: false }}
@@ -125,7 +125,7 @@ function Contact() {
           </div>
         </motion.div>
         <motion.div
-          initial={{ y: 100, opacity: 0 }}
+          initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
           viewport={{ once: false }}
@@ -142,7 +142,7 @@ function Contact() {
           />
         </motion.div>
         <motion.div
-          initial={{ y: 100, opacity: 0 }}
+          initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 1.2 }}
           viewport={{ once: false }}

@@ -44,7 +44,7 @@ function MainContextProvider({ children }) {
             max-[769px]:text-[.9rem] max-[769px]:justify-center
             max-[431px]:text-[.8rem] max-[431px]:justify-center max-[431px]:w-full
             max-[415px]:text-[.8rem] max-[415px]:justify-center max-[415px]:w-full
-            max-[391px]:text-[.8rem] max-[391px]:justify-center max-[391px]:w-full
+            max-[391px]:text-[.8rem] max-[391px]:justify-center max-[391px]:w-full max-[391px]:gap-1
             max-[376px]:text-[.7rem] max-[376px]:justify-center max-[376px]:w-full max-[376px]:gap-1"
         >
           <span className="flex items-center gap- max-[821px]:text-[1rem] max-[391px]:text-[.8rem] max-[415px]:text-[.7rem] max-[376px]:text-[.7rem]">
