@@ -55,7 +55,10 @@ export default function InfiniteSlider() {
       ref={containerRef}
       className="relative w-[50rem] overflow-hidden py-6 bg-white
       max-[1025px]:w-[45rem]
-      max-[821px]:w-[40rem]"
+      max-[821px]:w-[40rem]
+      max-[769px]:w-[30rem] max-[769px]:p-3
+      max-[431px]:w-[20rem] max-[431px]:p-2
+      max-[391px]:w-[15rem] max-[391px]:p-1"
     >
       <div
         ref={contentRef}
@@ -75,7 +78,8 @@ export default function InfiniteSlider() {
               alt=""
               className="h-16 w-auto object-contain
               max-[1025px]:h-14
-              max-[821px]:h-12"
+              max-[821px]:h-12
+              max-[769px]:h-8"
               draggable={false}
               style={{ pointerEvents: "none" }}
             />

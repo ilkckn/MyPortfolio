@@ -1,5 +1,5 @@
 import { cn } from "../lib/utils.js";
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 
 export const GlareCard = ({ children, className }) => {
   const isPointerInside = useRef(false);
@@ -18,6 +18,19 @@ export const GlareCard = ({ children, className }) => {
       y: 0,
     },
   });
+
+  const [radius, setRadius] = useState(
+    window.innerWidth <= 1024 ? "14px" : "48px"
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setRadius(window.innerWidth <= 1024 ? "14px" : "48px");
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const containerStyle = {
     "--m-x": "50%",
     "--m-y": "50%",
@@ -28,7 +41,7 @@ export const GlareCard = ({ children, className }) => {
     "--duration": "300ms",
     "--foil-size": "100%",
     "--opacity": "0",
-    "--radius": "48px",
+    "--radius": radius,
     "--easing": "ease",
     "--transition": "var(--duration) var(--easing)",
   };
@@ -66,6 +79,10 @@ export const GlareCard = ({ children, className }) => {
         "w-full h-[30rem] [aspect-ratio:17/21]",
         "max-[1025px]:w-[50rem] max-[1025px]:h-[14rem]",
         "max-[821px]:w-[40rem] max-[821px]:h-[12rem]",
+        "max-[769px]:w-[33rem] max-[769px]:h-[10rem]",
+        "max-[431px]:w-[25rem] max-[431px]:h-[9rem]",
+        "max-[391px]:w-[22rem] max-[391px]:h-[9rem]",
+        "max-[376px]:w-[21rem] max-[376px]:h-[10rem]",
         className
       )}
       ref={refElement}
